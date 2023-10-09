@@ -1,0 +1,1 @@
+type C:\jojo\jojoBin\todo.txt

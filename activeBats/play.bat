@@ -1,0 +1,1 @@
+cmdmp3win %*

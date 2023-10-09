@@ -1,0 +1,1 @@
+nvim -u "C:\Users\jojoh\AppData\Roaming\lunarvim\lvim\init.lua" %*

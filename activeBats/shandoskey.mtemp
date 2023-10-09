@@ -1,0 +1,18 @@
+se=sudo ue power
+es=ue power
+??=@echo off$tif exist "C:\jojo\jojoBin\$**" dir /b "C:\jojo\jojoBin\$**" $t doskey /m $b ggrep -i ^^$*$techo on
+double=echo Rule of 72 - at 8 percent interest, an investment will double in approximately (72/8) = 9 years
+cssref=start "" "https://www.w3schools.com/css/css_howto.asp"
+iisref=echo C:\Windows\System32\inetsrv\appcmd.exe LIST VDIRS
+dutch=start http://translate.google.com/translate_t#nl^|en^|$*
+helpphp="C:\ras\KB\PHP\php_manual_en.chm"
+cd=pushd $*
+back=popd
+home=c:$tpushd %home%
+.=explorer .
+..=pushd ..
+...=pushd ..\..
+csc35="C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe" $*
+erase=c:\ras\bin\recwarn.bat $*
+csc11="C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\csc.exe" $*
+csc40="C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\csc.exe" $*
