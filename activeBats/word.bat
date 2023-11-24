@@ -1,2 +1,2 @@
 @echo off
-start winword
+start winword %1
