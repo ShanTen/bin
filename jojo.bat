@@ -16,7 +16,7 @@ rem doskey duck="C:\Program Files\Mozilla Firefox\firefox.exe" "https://duckduck
 rem doskey goog="C:\Program Files\Mozilla Firefox\firefox.exe" "www.google.co.uk/search?q=$*%1+%2+%3+%4+%5+%6+%7+%8+%9"
 rem doskey bing="C:\Program Files\Mozilla Firefox\firefox.exe" "www.bing.com/search?q=$*%1+%2+%3+%4+%5+%6+%7+%8+%9"
 rem doskey npad="C:\Windows\System32\notepad.exe" $*
-rem doskey word=start winword
+rem doskey word=start winword	
 rem  doskey curl = "C:\Users\jojoh\Downloads\curl-7.74.0_2-win64-mingw\bin\curl.exe" $*
 rem doskey npp="C:\Program Files (x86)\Notepad++\notepad++.exe" $*
 rem doskey fox="C:\Program Files\Mozilla Firefox\firefox.exe" $* 
@@ -96,13 +96,17 @@ doskey track="C:\Program Files\Mozilla Firefox\firefox.exe" -p trello "https://d
 doskey cran=npx create-react-native-app $*
 doskey lstree=lsd --tree $*
 doskey gurl = curl $1 --ssl-no-revoke -x 127.0.0.1:8081
+doskey jelly=fox http://192.168.1.10:8096/ 
+doskey trans=fox -p bin2 http://192.168.1.10:9091/ 
+doskey sqrt=python "C:\jojo\python\play\root_decomp.py" $*
+
 echo Days Weeks Months Counter
 echo Shan10's shortcuts are active
 type "C:\jojo\jojoBin\banner.txt"
 
 rem STM32 Dev Shortcuts
 doskey stmdocs=cdd C:\jojo\learnSTM32CourseMaterial\MasteringMCU
-doskey stmws=cdd D:\CubeIDE\stm32f4xx_drivers
+doskey stmws=cdd D:\CubeIDE\iiot_project
 
 rem activate
 rem echo Conda Env Set
