@@ -60,7 +60,7 @@ doskey wtemp =cdd C:\\Users\\jojoh\\AppData\\Local\\Temp
 doskey phplog =type C:\xampp\php\logs\php_error_log
 
 doskey eposh ="C:\Program Files (x86)\Notepad++\notepad++.exe" "C:\Program Files (x86)\clink\oh-my-posh.lua"
-doskey poshtheme=cd /d "C:\jojo\cliApps\posh_themes"
+doskey posh-theme=cd /d "C:\jojo\cliApps\posh_themes"
 doskey edit-history=cdd C:\Users\jojoh\AppData\Local\clink
 rem doskey reg = cd 
 
