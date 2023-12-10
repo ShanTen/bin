@@ -1,2 +1,2 @@
 @echo off
-ping jojopi -4
+ping raspberrypi.local -4
