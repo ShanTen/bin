@@ -93,7 +93,6 @@ doskey sem = epic "C:\Users\jojoh\OneDrive\Desktop\SEM_Holidays_PERSONAL.txt"
 doskey freddy = C:\jojo\rasBin\frhed.exe $*
 doskey fclip = C:\Users\jojoh\scoop\shims\file2clip.exe $*
 doskey track="C:\Program Files\Mozilla Firefox\firefox.exe" -p trello "https://docs.google.com/spreadsheets/d/1-53c7uSumkRQEOYOw8LScx8vM5VzbB7vT9OOBzmL5q4/edit#gid=0"
-doskey cran=npx create-react-native-app $*
 doskey lstree=lsd --tree $*
 doskey gurl = curl $1 --ssl-no-revoke -x 127.0.0.1:8081
 doskey jelly=fox http://192.168.1.10:8096/ 
