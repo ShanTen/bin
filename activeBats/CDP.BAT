@@ -18,7 +18,8 @@ set "variable=%cd%\%srasfile%"
 rem echo DEBUG: "%variable%"
 set "variable=%variable:\=/%"
 rem echo DEBUG: "%variable%"
-echo %variable% | clip
+rem if error consult [https://stackoverflow.com/questions/7105433/windows-batch-echo-without-new-line]
+<NUL set /p=%variable% | clip
 goto :eof
 
 :withoutfile
