@@ -8,6 +8,10 @@ if /i %1X==/?X goto :showHelp
 
 rem ffmpeg -i input.mp4 -ss 00:07:19.500 -t 00:00:00.700 -c:v copy -c:a copy output.mp4 trim videos
 
+
+rem frames from video To extract all frames from between 1 and 5 seconds, and also between 11 and 15 seconds:
+rem ffmpeg -i in.mp4 -vf select='between(t,1,5)+between(t,11,15)' -vsync 0 out%d.png
+
 rem 12:31 PM 11-02-2023 -- QWuick dfujcking hack
 rem doskey codium = "C:\Users\jojoh\AppData\Local\Programs\VSCodium\VSCodium.exe $*" 06:43 PM 01-03-2023 [hack failed :( ] 
 
@@ -47,7 +51,7 @@ rem locators -> seperate implementation:
 doskey nomen =cdd C:\jojo\python\projects\nomenclatureMachineTest\singleChain\onGit
 doskey home =cdd C:\jojo
 doskey cord =cdd  C:\jojo\python\projects\coordinatenm
-doskey pics =cdd C:\Users\jojoh\OneDrive\Pictures\Saved Pictures
+doskey pics =cd "C:\Users\jojoh\OneDrive\Pictures\Saved Pictures"
 doskey drop =cdd C:\Users\jojoh\Dropbox\hInterns\
 doskey desk =cdd C:\Users\jojoh\OneDrive\Desktop\
 doskey bin =cdd c:\jojo\jojoBin\
@@ -62,7 +66,12 @@ doskey phplog =type C:\xampp\php\logs\php_error_log
 doskey eposh ="C:\Program Files (x86)\Notepad++\notepad++.exe" "C:\Program Files (x86)\clink\oh-my-posh.lua"
 doskey posh-theme=cd /d "C:\jojo\cliApps\posh_themes"
 doskey edit-history=cdd C:\Users\jojoh\AppData\Local\clink
+doskey bsjs=cdd C:\jojo\nodeCode\play\basic 
+doskey basic=cdd C:\jojo\nodeCode\play\basic 
 rem doskey reg = cd 
+
+doskey netflex=C:\Users\jojoh\OneDrive\Documents\.\netflexpostlist.xlsx 
+doskey netflexpics=cd "C:\Users\jojoh\OneDrive\Documents\netflexpics"
 
 rem not implementing right now:
 doskey flip = "C:\Program Files\Mozilla Firefox\firefox.exe" -p flip "https://app.fliplearn.com/home/wrv1_home/"
@@ -94,10 +103,19 @@ doskey freddy = C:\jojo\rasBin\frhed.exe $*
 doskey fclip = C:\Users\jojoh\scoop\shims\file2clip.exe $*
 doskey track="C:\Program Files\Mozilla Firefox\firefox.exe" -p trello "https://docs.google.com/spreadsheets/d/1-53c7uSumkRQEOYOw8LScx8vM5VzbB7vT9OOBzmL5q4/edit#gid=0"
 doskey lstree=lsd --tree $*
-doskey gurl = curl $1 --ssl-no-revoke -x 127.0.0.1:8081
-doskey jelly=fox http://192.168.1.10:8096/ 
-doskey trans=fox -p bin2 http://192.168.1.10:9091/ 
+doskey gurl = "C:\Program Files\Git\mingw64\bin\curl.exe" --ssl-no-revoke $*
+doskey jelly=fox raspberrypi.local:8096/ 
+doskey trans=fox -p bin2 raspberrypi.local:9091/ 
 doskey sqrt=python "C:\jojo\python\play\root_decomp.py" $*
+doskey pie=c:\jojo\cliApps\WinDirStatPortable\WinDirStatPortable.exe $*
+doskey tsplit=foxfile C:\Users\jojoh\Downloads\jojosWeek_v101.pdf 
+doskey ltspice-dl=cd /d C:\Users\jojoh\AppData\Local\LTspice\lib
+doskey lts=cd /d C:\Users\jojoh\AppData\Local\LTspice\lib
+doskey multicursor=echo ctrl+alt
+doskey startsql=sudo net start MySQL83 
+doskey stopsql=sudo net stop MySQL83 
+
+
 
 echo Days Weeks Months Counter
 echo Shan10's shortcuts are active
