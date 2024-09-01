@@ -114,6 +114,7 @@ doskey lts=cd /d C:\Users\jojoh\AppData\Local\LTspice\lib
 doskey multicursor=echo ctrl+alt
 doskey startsql=sudo net start MySQL83 
 doskey stopsql=sudo net stop MySQL83 
+doskey stopsql=sudo net stop MySQL83 
 
 
 

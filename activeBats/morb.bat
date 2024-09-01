@@ -1,12 +1,12 @@
 @echo off
-pushd c:\jojo\nodeCode\projects\microblogging\WriteBlogHere\
+pushd D:\shan10\myCode\python\logger-new\WriteBlogHere\
 touch "%*.md"
 set fname="%*.md"
 echo type blogpost here ... > %fname%
 notepads %fname%
 popd
-pushd c:\jojo\nodeCode\projects\microblogging\metaScripts\ 
-C:\Users\jojoh\Anaconda3\python.exe conv2html.py
+pushd D:\shan10\myCode\python\logger-new\metaScripts\ 
+C:\Users\jojoh\.pyenv\pyenv-win\versions\3.11.0\python.exe conv2html.py
 popd 
-cd c:\jojo\nodeCode\projects\microblogging\
+cdd D:\shan10\myCode\python\logger-new\
 echo Run batch File to Confirm Post 
