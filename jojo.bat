@@ -103,7 +103,7 @@ doskey freddy = C:\jojo\rasBin\frhed.exe $*
 doskey fclip = C:\Users\jojoh\scoop\shims\file2clip.exe $*
 doskey track="C:\Program Files\Mozilla Firefox\firefox.exe" -p trello "https://docs.google.com/spreadsheets/d/1-53c7uSumkRQEOYOw8LScx8vM5VzbB7vT9OOBzmL5q4/edit#gid=0"
 doskey lstree=lsd --tree $*
-doskey gurl = "C:\Program Files\Git\mingw64\bin\curl.exe" --ssl-no-revoke $*
+rem doskey gurl = "C:\Program Files\Git\mingw64\bin\curl.exe" --ssl-no-revoke $*
 doskey jelly=fox raspberrypi.local:8096/ 
 doskey trans=fox -p bin2 raspberrypi.local:9091/ 
 doskey sqrt=python "C:\jojo\python\play\root_decomp.py" $*
