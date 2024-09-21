@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 /*
     red
@@ -39,6 +41,12 @@
 #define BLACK_NUMBER 16
 #define DARK_BLUE_NUMBER 17
 
+int randrange(int min, int max)
+{
+    srand ( time(NULL) );
+    return rand() % (max - min + 1) + min;
+}
+
 int main(int argc, char* argv[])
 {
     int colors[] = {RED_NUMBER, GREEN_NUMBER, YELLOW_NUMBER, BLUE_NUMBER, PURPLE_NUMBER, LIGHT_BLUE_NUMBER, WHITE_GREY_NUMBER, GREY_NUMBER, LIGHT_RED_NUMBER, GRASS_GREEN_NUMBER, LIGHT_YELLOW_NUMBER, LIGHT_BLUE_NUMBER, LIGHT_PURPLE_NUMBER, LIGHT_LIGHT_BLUE_NUMBER, WHITE_NUMBER, BLACK_NUMBER, DARK_BLUE_NUMBER};
@@ -48,6 +56,7 @@ int main(int argc, char* argv[])
     {
         printf("Usage: TabColor <color>\n");
         printf("Supply only the name of the required color\n");
+        printf("Valid colors are: red, green, yellow, blue, purple, light-blue, white-grey, grey, light-red, grass, light-yellow, light-blue, light-purple, light-light-blue, white, black, dark-blue\n");
         return 1;
     }
 
@@ -121,9 +130,19 @@ int main(int argc, char* argv[])
     {
         printf(baseStr, DARK_BLUE_NUMBER);
     }
+    else if(strcmp(argv[1], "rand") == 0)
+    {
+        printf(baseStr, colors[randrange(0, 16)]);
+    }
+    else if(strcmp(argv[1], "random") == 0)
+    {
+        printf(baseStr, colors[randrange(0, 16)]);
+    }
     else
     {
         printf("Invalid color\n");
+        printf("Valid colors are: red, green, yellow, blue, purple, light-blue, white-grey, grey, light-red, grass, light-yellow, light-blue, light-purple, light-light-blue, white, black, dark-blue\n");
+        printf("Or use 'rand' or 'random' for a random color\n");
         return 1;
     }
 
