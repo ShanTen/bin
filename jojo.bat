@@ -115,6 +115,7 @@ doskey multicursor=echo ctrl+alt
 doskey startsql=sudo net start MySQL83 
 doskey stopsql=sudo net stop MySQL83 
 doskey stopsql=sudo net stop MySQL83 
+doskey tc=C:\jojo\jojoBin\activeBats\TabColor.exe $*
 
 
 
