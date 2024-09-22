@@ -40,6 +40,7 @@
 #define WHITE_NUMBER 15
 #define BLACK_NUMBER 16
 #define DARK_BLUE_NUMBER 17
+#define ORANGE_NUMBER 202
 
 int randrange(int min, int max)
 {
@@ -49,7 +50,7 @@ int randrange(int min, int max)
 
 int main(int argc, char* argv[])
 {
-    int colors[] = {RED_NUMBER, GREEN_NUMBER, YELLOW_NUMBER, BLUE_NUMBER, PURPLE_NUMBER, LIGHT_BLUE_NUMBER, WHITE_GREY_NUMBER, GREY_NUMBER, LIGHT_RED_NUMBER, GRASS_GREEN_NUMBER, LIGHT_YELLOW_NUMBER, LIGHT_BLUE_NUMBER, LIGHT_PURPLE_NUMBER, LIGHT_LIGHT_BLUE_NUMBER, WHITE_NUMBER, BLACK_NUMBER, DARK_BLUE_NUMBER};
+    int colors[] = {ORANGE_NUMBER, RED_NUMBER, GREEN_NUMBER, YELLOW_NUMBER, BLUE_NUMBER, PURPLE_NUMBER, LIGHT_BLUE_NUMBER, WHITE_GREY_NUMBER, GREY_NUMBER, LIGHT_RED_NUMBER, GRASS_GREEN_NUMBER, LIGHT_YELLOW_NUMBER, LIGHT_BLUE_NUMBER, LIGHT_PURPLE_NUMBER, LIGHT_LIGHT_BLUE_NUMBER, WHITE_NUMBER, BLACK_NUMBER, DARK_BLUE_NUMBER};
 
 
     if(argc != 2)
@@ -129,6 +130,10 @@ int main(int argc, char* argv[])
     else if(strcmp(argv[1], "dark-blue") == 0)
     {
         printf(baseStr, DARK_BLUE_NUMBER);
+    }
+    else if(strcmp(argv[1], "orange") == 0)
+    {
+        printf(baseStr, ORANGE_NUMBER);
     }
     else if(strcmp(argv[1], "rand") == 0)
     {
