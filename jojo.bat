@@ -122,6 +122,8 @@ doskey tc=C:\jojo\jojoBin\activeBats\TabColor.exe $*
 echo Days Weeks Months Counter
 echo Shan10's shortcuts are active
 type "C:\jojo\jojoBin\banner.txt"
+echo.
+echo type "confuse" if confused about what you have to do/focus for the next few months 
 
 rem STM32 Dev Shortcuts
 doskey stmdocs=cdd C:\jojo\learnSTM32CourseMaterial\MasteringMCU
