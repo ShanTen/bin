@@ -124,10 +124,14 @@ echo Shan10's shortcuts are active
 type "C:\jojo\jojoBin\banner.txt"
 echo.
 echo type "confuse" if confused about what you have to do/focus for the next few months 
+echo type "hard" to get some motivation to get started
+echo type "dec" to figure out what next for december and january
 
 rem STM32 Dev Shortcuts
 doskey stmdocs=cdd C:\jojo\learnSTM32CourseMaterial\MasteringMCU
 doskey stmws=cdd D:\CubeIDE\iiot_project
+doskey hard=npp.bat "C:\Users\jojoh\OneDrive\Desktop\stay-hard.txt"
+doskey dec=type C:\Users\jojoh\OneDrive\Desktop\dec2024.txt
 
 rem activate
 rem echo Conda Env Set
