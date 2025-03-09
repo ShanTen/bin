@@ -1,0 +1,1 @@
+rem Distributes (linearly interpolates) git across 2 dates with "ignore" dates in the middle

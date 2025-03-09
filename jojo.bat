@@ -99,19 +99,21 @@ doskey whatdl = cdd "C:/Users/jojoh/AppData/Local/Microsoft/Windows/INetCache"
 doskey mddate = c:/jojo/jojoBin/mdate.bat
 doskey batref = "C:\Program Files\Mozilla Firefox\firefox.exe" https://ss64.com/nt/
 doskey sem = epic "C:\Users\jojoh\OneDrive\Desktop\SEM_Holidays_PERSONAL.txt"
+doskey pdf2image = echo magick convert -density 300 spPassport.pdf -quality 100 spPassport.png 
+doskey pdf2img = echo magick convert -density 300 spPassport.pdf -quality 100 spPassport.png 
 doskey freddy = C:\jojo\rasBin\frhed.exe $*
 doskey fclip = C:\Users\jojoh\scoop\shims\file2clip.exe $*
 doskey track="C:\Program Files\Mozilla Firefox\firefox.exe" -p trello "https://docs.google.com/spreadsheets/d/1-53c7uSumkRQEOYOw8LScx8vM5VzbB7vT9OOBzmL5q4/edit#gid=0"
 doskey lstree=lsd --tree $*
 rem doskey gurl = "C:\Program Files\Git\mingw64\bin\curl.exe" --ssl-no-revoke $*
-doskey jelly=fox raspberrypi.local:8096/ 
-doskey trans=fox -p bin2 raspberrypi.local:9091/ 
+doskey jelly=fox jellypi.local:8096/ 
+doskey trans=fox -p bin2 jellypi.local:9091/ 
 doskey sqrt=python "C:\jojo\python\play\root_decomp.py" $*
 doskey pie=c:\jojo\cliApps\WinDirStatPortable\WinDirStatPortable.exe $*
 doskey tsplit=foxfile C:\Users\jojoh\Downloads\jojosWeek_v101.pdf 
 doskey ltspice-dl=cd /d C:\Users\jojoh\AppData\Local\LTspice\lib
 doskey lts=cd /d C:\Users\jojoh\AppData\Local\LTspice\lib
-doskey multicursor=echo ctrl+alt
+doskey multicursor=echo "ctrl+alt+up/down dont select the text just be on the starting line and go up or down"
 doskey startsql=sudo net start MySQL83 
 doskey stopsql=sudo net stop MySQL83 
 doskey stopsql=sudo net stop MySQL83 
@@ -126,12 +128,17 @@ echo.
 echo type "confuse" if confused about what you have to do/focus for the next few months 
 echo type "hard" to get some motivation to get started
 echo type "dec" to figure out what next for december and january
+echo.
+echo HEY YOU. THE FINAL SOLUTION LIST FOR DORA IS ON lst - career - PreDoraTech
+echo TO CHECK OR ADD ListOfLists TYPE LOL OR LOLE !
 
 rem STM32 Dev Shortcuts
 doskey stmdocs=cdd C:\jojo\learnSTM32CourseMaterial\MasteringMCU
 doskey stmws=cdd D:\CubeIDE\iiot_project
 doskey hard=npp.bat "C:\Users\jojoh\OneDrive\Desktop\stay-hard.txt"
 doskey dec=type C:\Users\jojoh\OneDrive\Desktop\dec2024.txt
+doskey lol=type C:\Users\jojoh\OneDrive\Desktop\ListOfLists.txt 
+doskey lole=npp.bat C:\Users\jojoh\OneDrive\Desktop\ListOfLists.txt 
 
 rem activate
 rem echo Conda Env Set
